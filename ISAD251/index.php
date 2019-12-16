@@ -108,7 +108,7 @@ try {
 
             <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
                 <img src = "images/ChocolateCake.jpg" alt = " Chocolate Cake" style="width:219px; height:164px;">
-                <p class="w3-text-grey">Chocolate Cake
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 153';
                     $q = $conn->prepare($sql);
@@ -117,13 +117,14 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
                 </p><br>
 
                 <img src = "images/CarrotCake.jpg" alt = " Carrot Cake" style="width:236px; height:133px;">
-                <p class="w3-text-grey">Carrot Cake
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 154';
                     $q = $conn->prepare($sql);
@@ -132,13 +133,14 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
                 </p><br>
 
                 <img src = "images/Flapjack.jpg" alt = " Flapjack" style="width:252px; height:167px;">
-                <p class="w3-text-grey">Flapjack
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 155';
                     $q = $conn->prepare($sql);
@@ -147,13 +149,14 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
                 </p><br>
 
-                <img src = "images/BakewellSlice.jpg" alt = " Bakewell Slice" style="width:213px; height:125px;">
-                <p class="w3-text-grey">Flapjack
+                <img src = "images/BakewellSlice.jpg" alt = " Bakewell Slice" style="width:234px; height:138px;">
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 156';
                     $q = $conn->prepare($sql);
@@ -162,13 +165,14 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
                 </p><br>
 
-                <img src = "images/FruitCake.jpg" alt = " Fruit Cake" style="width:219px; height:182px;">
-                <p class="w3-text-grey">Fruit Cake
+                <img src = "images/FruitCake.jpg" alt = " Fruit Cake" style="width:241px; height:206px;">
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 157';
                     $q = $conn->prepare($sql);
@@ -177,6 +181,7 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
@@ -186,7 +191,7 @@ try {
 
             <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
                 <img src = "images/cupOfTea.jpg" alt = " cup of tea" style="width:212px; height:120px;">
-                <p class="w3-text-grey">Breakfast Tea
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 100';
                     $q = $conn->prepare($sql);
@@ -195,13 +200,14 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
                 </p><br>
 
                 <img src = "images/Darjeeling.jpg" alt = " darjeeling image" style="width:220px; height:157px;">
-                <p class="w3-text-grey">Darjeeling Tea
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 101';
                     $q = $conn->prepare($sql);
@@ -210,13 +216,14 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
                 </p><br>
 
                     <img src = "images/GreenTea.jpg" alt = " green tea image" style="width:204px; height:137px;">
-                <p class="w3-text-grey">Green Tea
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 102';
                     $q = $conn->prepare($sql);
@@ -225,6 +232,7 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
@@ -232,7 +240,7 @@ try {
                 </p><br>
 
                 <img src = "images/Camomile.jpg" alt = " camomile tea  image" style="width:187px; height:148px;">
-                <p class="w3-text-grey">Camomile Tea
+                <p class="w3-text-grey">
                     <?php
                     $sql = 'SELECT * FROM stockitems WHERE StockCode = 103';
                     $q = $conn->prepare($sql);
@@ -241,16 +249,13 @@ try {
 
                     while ($r = $q->fetch()){
 
+                        echo sprintf('%s ', $r['Description']);
                         echo sprintf('%s <br/>', $r['Price']);
                     }
                     ?>
 
                 </p><br>
 
-
-
-                <h5>Soda</h5>
-                <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
             </div>
             <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
         </div>
