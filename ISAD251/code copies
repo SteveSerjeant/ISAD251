@@ -1,0 +1,6 @@
+                        echo sprintf('%s <br/>', $r['Price']);
+						
+UPDATE stockitems
+SET Category= "Coffee", Description = "Mocha"
+WHERE
+StockCode = 107;
